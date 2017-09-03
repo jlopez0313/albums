@@ -1,0 +1,96 @@
+html,body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+body{
+	background: #222d32;
+}
+
+.header{
+	height: 70px;
+	background: #336699;
+}
+
+.sidebar{
+	width: 15%;
+	min-height: calc(100% - 150px);
+	background: #222d32;
+	float: left;
+}
+
+.sidebar .nav i{
+	margin-right: 10px;
+}
+
+.sidebar .nav li a{
+	border-left: 3px solid transparent;
+	padding: 15px 25px 15px 15px;
+	color: #b8c7ce;	
+}
+
+.sidebar .nav li.first {
+	padding: 15px 25px 15px 15px;
+    color: #4b646f;
+    background: #1a2226;
+}
+
+.sidebar .nav li a:hover{
+	color: #ffffff;
+    background: #1e282c;
+    border-left: 3px solid #3c8dbc;
+}
+
+.content{
+	min-height: calc(100% - 105px);
+    background-color: #ecf0f5;
+    z-index: 800;
+	width: 85%;
+	float: left;
+	padding: 25px;
+}
+
+.footer{
+	clear: both;
+	height: 50px;
+	background: #336699;
+}
+
+a.fancybox .mini{
+	width: 15%;
+	margin-left: 1%;
+	margin-bottom: 20px;
+	height: auto;
+	display: inline-table;
+}
+
+.error{
+	color: #f00;	
+}
+
+.photos{
+	clear: both;
+}
+
+.mini{
+	width: 15%;
+	height: auto;
+}
+
+.search{
+	float: right;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+	.sidebar, .content{
+		width: 100%;
+		min-height: auto;
+		height: auto;
+	}	
+	
+	a.fancybox .mini{
+	  width: 48%;
+	}
+}
